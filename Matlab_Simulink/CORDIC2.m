@@ -6,12 +6,12 @@ x = 1.20513;
 y = 0;
 theta = input('angle ? ');
 z = theta;
-for i = 1 : 14
-    sgn = (z > 0)*2 - 1;
+for i = 1 : 15
+    sgn = (z >= 0)*2 - 1;
     temp = x + sgn*y/(2^i);
     y = y + sgn*x/(2^i);
     x = temp;
-    z = z-sgn*epsilon(i);
+    z = z-sgn*epsilon(i)
 end
 x + y
 exp(theta)
