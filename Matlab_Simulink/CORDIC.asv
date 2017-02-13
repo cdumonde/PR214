@@ -13,7 +13,10 @@ for i = 1 : niter + 1
     if(z(i) == 0)
         X = x(i);
         Y = y(i);
-    break
+        break
+    else
+        X = x(i + 1);
+        Y = y(i + 1);
     end
 end 
 
