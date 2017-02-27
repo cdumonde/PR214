@@ -11,7 +11,7 @@ for i = 1 : 15
     temp = x + sgn*y/(2^i);
     y = y + sgn*x/(2^i);
     x = temp;
-    z = z-sgn*epsilon(i)
+    z = z-sgn*epsilon(i);
 end
 x + y
 exp(theta)
