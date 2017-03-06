@@ -6,7 +6,7 @@ close all;
 m = -1;
 theta = -10:0.01:10;
 n = input('Combien d iterations ? ');
-k = 1 : n+1;
+k = 1 : n + 1;
 K = 0.99804536134807915012679782538069;
 epsilon = atanh(2.^-k);
 for i = 1:length(theta)
